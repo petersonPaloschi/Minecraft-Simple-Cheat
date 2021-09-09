@@ -56,7 +56,7 @@ void c_reacher::reach()
                             for (int k = 0; k < 26; k++)
                             {
                                 float checks;
-                                endereco1 = endereco1 + 0x4;
+                                endereco1 += 0x4;
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                                 ReadProcessMemory(pHandle, (void*)endereco1, &checks, sizeof(checks), 0);
 
@@ -70,7 +70,7 @@ void c_reacher::reach()
                             for (int k = 0; k < 16; k++)
                             {
                                 float checks;
-                                endereco2 = endereco2 - 0x4;
+                                endereco2 -= 0x4;
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                                 ReadProcessMemory(pHandle, (void*)endereco2, &checks, sizeof(checks), 0);
 
@@ -84,7 +84,7 @@ void c_reacher::reach()
                             for (int k = 0; k < 8; k++)
                             {
                                 double checks;
-                                endereco3 = endereco3 + 0x8;
+                                endereco3 += 0x8;
                                 ReadProcessMemory(pHandle, (void*)endereco3, &checks, sizeof(checks), 0);
 
                                 if (checks == 3.0)
@@ -97,7 +97,7 @@ void c_reacher::reach()
                             for (int k = 0; k < 8; k++)
                             {
                                 double checks;
-                                endereco4 = endereco4 - 0x8;
+                                endereco4 -= 0x8;
                                 ReadProcessMemory(pHandle, (void*)endereco4, &checks, sizeof(checks), 0);
 
                                 if (checks == 3.0)
