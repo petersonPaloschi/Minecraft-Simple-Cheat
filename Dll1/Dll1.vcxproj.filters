@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{8dfa75f4-e6be-4037-9675-9865960bea46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{7a3e36a3-2539-4c58-bb80-19e32a857d2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clicker.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="exit.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="reach.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="recraft.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="click.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="exit.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="reach.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="recraft.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

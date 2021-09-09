@@ -1,0 +1,1 @@
+RMDIR /S /Q "Debug", "x64", ".vs", "Dll1/Debug", "Dll1/Release", "Dll1/x64"
