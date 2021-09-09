@@ -17,7 +17,7 @@ std::vector < DWORD > reachlist;
 std::vector < DWORD > reachlistdbl;
 std::vector < DWORD > limitlist;
 
-float valorReach = 3.5;
+float valorReach = 4.5;
 
 void c_reacher::reach()
 {
@@ -64,8 +64,6 @@ void c_reacher::reach()
                                 {
                                     reachlist.push_back(endereco1);
                                     limitlist.push_back(i + j);
-                                    std::cout << std::hex << "3.0 float --> " << endereco1 << std::endl;
-                                    std::cout << std::hex << "4.5 double --> " << i + j << std::endl;
                                 }
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                             }
@@ -80,8 +78,6 @@ void c_reacher::reach()
                                 {
                                     reachlist.push_back(endereco2);
                                     limitlist.push_back(i + j);
-                                    std::cout << std::hex << "3.0 float --> " << endereco2 << std::endl;
-                                    std::cout << std::hex << "4.5 double --> " << i + j << std::endl;
                                 }
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                             }
@@ -95,8 +91,6 @@ void c_reacher::reach()
                                 {
                                     reachlistdbl.push_back(endereco3);
                                     limitlist.push_back(i + j);
-                                    std::cout << std::hex << "3.0 float --> " << endereco3 << std::endl;
-                                    std::cout << std::hex << "4.5 double --> " << i + j << std::endl;
                                 }
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                             }
@@ -110,8 +104,6 @@ void c_reacher::reach()
                                 {
                                     reachlistdbl.push_back(endereco4);
                                     limitlist.push_back(i + j);
-                                    std::cout << std::hex << "3.0 float --> " << endereco4 << std::endl;
-                                    std::cout << std::hex << "4.5 double --> " << i + j << std::endl;
                                 }
                                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
                             }
